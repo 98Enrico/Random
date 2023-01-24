@@ -1,0 +1,22 @@
+import random
+
+players = []
+
+for i in range(5):
+    players.append(input(f"Enter player {i+1} name: "))
+
+mid = random.choice(players)
+players.remove(mid)
+top = random.choice(players)
+players.remove(top)
+jungle = random.choice(players)
+players.remove(jungle)
+support = random.choice(players)
+players.remove(support)
+adc = players[0]
+
+print(f"Mid: {mid}")
+print(f"Top: {top}")
+print(f"Jungle: {jungle}")
+print(f"Support: {support}")
+print(f"ADC: {adc}")
